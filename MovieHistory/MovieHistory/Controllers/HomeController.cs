@@ -23,20 +23,7 @@ namespace MovieHistory.Controllers
         public IActionResult Index()
         {
             ViewData["apiKey"] = _appSettings.MovieAPIKey;
-
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Welcome to Movie History!";
 
             return View();
         }
